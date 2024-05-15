@@ -1,0 +1,182 @@
+/* ------------------------------------------------------------------------------- HEADER ------------------------------------------------------------------------------- */
+:root {
+    --titulo:"Bebas Neue", sans-serif;
+    --textos:"Josefin Sans", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ffffff;
+    font-family: var(--titulo);
+    z-index: 1000;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 5%;
+    border-bottom: 3px solid black;
+}
+.logo {
+    max-width: 150px;
+}
+nav ul {
+    list-style: none;
+    margin-right: 25px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+nav ul li a:hover {
+    color: #cccccc;
+}
+/* ------------------------------------------------------------------------------- BODY ------------------------------------------------------------------------------- */
+.background-section {
+    background-color: #ddddddf5;
+    box-shadow: 0 1px 8px #6502a7;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 85%;
+    margin: 100px auto;
+    gap: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+body {
+    background-image: url(../images/backgrundimage.avif);
+    backdrop-filter: brightness(40%);
+    background-color: solid black;
+    background-size: contain;
+    background-position: center;
+}
+.container {
+    font-family: var(--titulo);
+    border-radius: 15px;
+    background-color: #dddddd;
+    padding: 10px;
+    box-shadow: 0 1px 4px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container:hover {
+    transition: all 5ms;
+    box-shadow: 0 1px 10px #6502a7;
+}
+.container h2 {
+    font-size: 33px;
+    font-family: var(--titulo);
+    text-align: center;
+}
+.container p {
+    font-size: 18px;
+    text-align: center;
+    font-family: var(--textos);
+}
+.button-link {
+    background-color: #9900ff;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 1px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 60%;
+}
+.button-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.button-link:hover {
+    transition: all 5ms;
+    box-shadow: 0 5px 10px #000000;
+}
+/* ------------------------------------------------------------------------------- FOOTER ------------------------------------------------------------------------------- */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #e2e2e2;
+    align-items: center;
+    border-top: 3px solid black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer-column {
+    min-width: 20%;
+}
+.footer-column h3 {
+    font-family: var(--titulo);
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: var(--textos);
+}
+.footer-column input,
+.footer-column textarea,
+.footer-column button {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: var(--textos);
+}
+.footer-column button {
+    background-color: #9900ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.footer-column button:hover {
+    transition: all 5ms;
+    box-shadow: 0 5px 10px #000000;
+}
+.footer-column ul li img {
+    width: 25px;
+    height: auto;
+}
+/* ------------------------------------------------------------------------------- MEDIA QUERY ------------------------------------------------------------------------------- */
+@media(max-width:480px) {
+    header {
+        flex-direction: row;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        text-align: center;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+}
+@media(min-width: 768px) and (max-width: 1280px) {
+    .background-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
