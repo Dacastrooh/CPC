@@ -1,0 +1,24 @@
+.boton {
+    background-color: #9900ff;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 5px;
+    color: white;
+    border: 1px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 50%;
+    font-family: $textos;
+    &:hover {
+        transition: all 5ms;
+        box-shadow: 0 5px 10px #000000;
+        .boton a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    }
+}

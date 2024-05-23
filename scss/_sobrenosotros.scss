@@ -1,0 +1,29 @@
+#sobre_nosotros {
+    background-image: url(../images/sn_backgrundimage.png);
+    backdrop-filter: brightness(40%);
+    background-position: 0% ;
+        #main-sn {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            background-color: #f0f0f0d0;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 25px;
+            color: #ddddddc2;
+                #titulo-sn {
+                    color: #050505;
+                    font-family: $titulos;
+                    font-size: 4em;
+                    text-align: center;
+                }
+                .sn {
+                    color: #252525;
+                    font-family: $textos;
+                    text-align: center;
+                    font-size: 1em;
+                    line-height: 1.5;
+                    margin-bottom: 10px;
+                }
+            }
+    }

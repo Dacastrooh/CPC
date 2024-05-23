@@ -1,0 +1,77 @@
+#destacadoss {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: url(../images/d_backgroundimage.jpg);
+    background-color: #f0f0f0;
+    backdrop-filter: brightness(40%);
+        #titulo-d {
+            font-family: $titulos;
+            font-size: 66px;
+            text-align: center;
+            color: #f0f0f0;
+            text-shadow: 0 1px 10px #000000,
+            0 2px 10px #000000;
+            }
+        .contenido {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center; 
+            gap: 77px ;
+            margin: 20px auto;
+                .item {
+                    text-align: center;
+                    width: 200px;
+                    margin-bottom: 20px;
+                    padding: 10px;
+                    background-color: #f0f0f0;
+                    border: 2px solid #000000;
+                    box-shadow: 0 1px 8px #6502a7;
+                    border-radius: 10px;
+                        .precios {
+                            font-family: $titulos;
+                            font-size: 22px;
+                            margin-bottom: 10px;
+                        }
+                        .image-container {
+                            position: relative;
+                            display: inline-block;
+                                img {
+                                    width: 150px;
+                                    height: auto;
+                                    border-radius: 5px;
+                                    margin-bottom: 10px;
+                                }
+                                .comprar-btn {
+                                    display: none;
+                                    position: absolute;
+                                    bottom: 20px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    padding: 5px 10px;
+                                    background-color: #9900ff;
+                                    font-family: $textos;
+                                    transition: all 5ms;
+                                    box-shadow: 0 5px 10px #000000;
+                                    color: #fff;
+                                    border: none;
+                                    border-radius: 5px;
+                                    cursor: pointer;
+                                }
+                                .image-container:hover .comprar-btn {
+                                    display: block;
+                                }
+                        }
+                        ul {
+                            list-style-type: none;
+                            padding: 0;
+                                li {
+                                    font-family: $textos;
+                                    font-size: 85%;
+                                    margin-bottom: 5px;
+                                }
+                            }
+                    }
+            }
+    }

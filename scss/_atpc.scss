@@ -1,0 +1,43 @@
+#atpc {
+    background-image: url(../images/atp_backgroundimage.jpg);
+    backdrop-filter: brightness(40%);
+    background-color: solid black;
+    background-size: contain;
+    background-position: center;
+        #form-atpc {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 300px;
+            margin-right: 300px;
+            background-color: #dddddd98;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #6502a7;
+            align-items: center;
+            text-align: center;
+                #titulo-atpc {
+                    font-family: $titulos;
+                    font-size: 50px;
+                    }
+                .titulo-seccion {
+                    font-family: $titulos;
+                    font-size: 25px;
+                    text-shadow: 0 0 5px #dddddd;
+                    margin-top: 20px;
+                    }
+                input[type="text"], 
+                input[type="email"], 
+                input[type="number"], 
+                #procesador, 
+                textarea {
+                    font-family: $textos;
+                    font-size: 15px;
+                    width: 100%;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                }
+        }
+}

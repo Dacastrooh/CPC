@@ -1,0 +1,131 @@
+/* ------------------------------------------------------------------------------- HEADER ------------------------------------------------------------------------------- */
+$titulos: "Bebas Neue", sans-serif;
+$textos: "Josefin Sans", sans-serif;
+header {
+    border-bottom: 3px solid black;
+    .logo {
+        max-width: 150px;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-left: auto;
+        text-align: center;
+        font-family: $titulos;
+        font-size: 28px;
+        }
+}
+/* ------------------------------------------------------------------------------- BODY *INICIO* ------------------------------------------------------------------------------- */
+#index {
+    background-image: url(../images/backgrundimage.png);
+    backdrop-filter: brightness(40%);
+    background-color: solid black;
+    background-size: contain;
+    background-position: center;
+    .background-section {
+        background-color: #ddddddf5;
+        box-shadow: 0 1px 8px #6502a7;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 85%;
+        margin: 100px auto;
+        gap: 50px;
+        padding: 20px;
+        border-radius: 10px;
+        .contenedor {
+            font-family: "$titulos";
+            border-radius: 15px;
+            background-color: #dddddd;
+            padding: 10px;
+            box-shadow: 0 1px 4px black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                .titulo-inicio {
+                    font-size: 33px;
+                    font-family: $titulos;
+                    text-align: center;
+                    }
+                    .i {
+                        font-size: 18px;
+                        text-align: center;
+                        font-family: $textos;
+                    }
+                &:hover {
+                    transition: all 5ms;
+                    box-shadow: 0 1px 10px #6502a7;
+                }
+            }
+        }
+    }
+/* ------------------------------------------------------------------------------- BODY *ATPC* ------------------------------------------------------------------------------- */
+@import "_atpc";
+/* ------------------------------------------------------------------------------- BODY *COMPARADOR* ------------------------------------------------------------------------------- */
+@import "_comparador";
+/* ------------------------------------------------------------------------------- BODY *DESTACADOS* ------------------------------------------------------------------------------- */
+@import "_destacados";
+/* ------------------------------------------------------------------------------- BODY *SOBRE NOSOTROS* ------------------------------------------------------------------------------- */
+@import "_sobrenosotros";
+/* ------------------------------------------------------------------------------- FOOTER ------------------------------------------------------------------------------- */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #e2e2e2;
+    align-items: center;
+    border-top: 3px solid black;
+    position: relative;
+    bottom: 0;
+    align-items: center;
+    .footer-column {
+        min-width: 20%;
+            h6 {
+            font-family: $titulos;
+            font-size: 25px;
+            color: #333;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            text-align: center;
+            }
+            ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-family: $textos;
+                li {
+                    img {
+                        width: 25px;
+                        height: auto;
+                        }
+                    }
+            }
+        input,
+        textarea,
+        button {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-family: $textos;
+        }
+        button {
+        background-color: #9900ff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+            &:hover {
+                transition: all 5ms;
+                box-shadow: 0 5px 10px #000000;
+                }
+            }
+        }
+    }
+/* ------------------------------------------------------------------------------- **BOTONES** ------------------------------------------------------------------------------- */
+@import "_botones";
+/* ------------------------------------------------------------------------------- **MEDIA QUERY** -------------------------------------------------------------------------------- */
+@import "_mediaquery";

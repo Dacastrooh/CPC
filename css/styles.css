@@ -1,0 +1,517 @@
+/* ------------------------------------------------------------------------------- HEADER ------------------------------------------------------------------------------- */
+header {
+  border-bottom: 3px solid black;
+}
+header .logo {
+  max-width: 150px;
+}
+header .navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-left: auto;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+}
+
+/* ------------------------------------------------------------------------------- BODY *INICIO* ------------------------------------------------------------------------------- */
+#index {
+  background-image: url(../images/backgrundimage.png);
+  -webkit-backdrop-filter: brightness(40%);
+          backdrop-filter: brightness(40%);
+  background-color: solid black;
+  background-size: contain;
+  background-position: center;
+}
+#index .background-section {
+  background-color: rgba(221, 221, 221, 0.9607843137);
+  box-shadow: 0 1px 8px #6502a7;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 85%;
+  margin: 100px auto;
+  gap: 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+#index .background-section .contenedor {
+  font-family: "$titulos";
+  border-radius: 15px;
+  background-color: #dddddd;
+  padding: 10px;
+  box-shadow: 0 1px 4px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#index .background-section .contenedor .titulo-inicio {
+  font-size: 33px;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+}
+#index .background-section .contenedor .i {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+#index .background-section .contenedor:hover {
+  transition: all 5ms;
+  box-shadow: 0 1px 10px #6502a7;
+}
+
+/* ------------------------------------------------------------------------------- BODY *ATPC* ------------------------------------------------------------------------------- */
+#atpc {
+  background-image: url(../images/atp_backgroundimage.jpg);
+  -webkit-backdrop-filter: brightness(40%);
+          backdrop-filter: brightness(40%);
+  background-color: solid black;
+  background-size: contain;
+  background-position: center;
+}
+#atpc #form-atpc {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+  background-color: rgba(221, 221, 221, 0.5960784314);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #6502a7;
+  align-items: center;
+  text-align: center;
+}
+#atpc #form-atpc #titulo-atpc {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+}
+#atpc #form-atpc .titulo-seccion {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
+  text-shadow: 0 0 5px #dddddd;
+  margin-top: 20px;
+}
+#atpc #form-atpc input[type=text],
+#atpc #form-atpc input[type=email],
+#atpc #form-atpc input[type=number],
+#atpc #form-atpc #procesador,
+#atpc #form-atpc textarea {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------------------------- BODY *COMPARADOR* ------------------------------------------------------------------------------- */
+#comparador {
+  background-image: url(../images/c_backgroundimage.png);
+  -webkit-backdrop-filter: brightness(40%);
+          backdrop-filter: brightness(40%);
+  background-color: solid black;
+  background-size: contain;
+  background-position: center;
+}
+#comparador main {
+  margin: 50px;
+}
+#comparador main #titulo-comparador {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 0 0 5px #6502a7;
+}
+#comparador main .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+  padding: 15px;
+  justify-content: center;
+}
+#comparador main .container .fs-c {
+  background-color: rgba(223, 223, 223, 0.8352941176);
+  width: 30%;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 0 1px 10px #6502a7;
+}
+#comparador main .container .fs-c .componente-c {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 20px;
+}
+#comparador main .container .fs-c #formularioA,
+#comparador main .container .fs-c #formularioB {
+  margin-bottom: 20px;
+  margin: 50px;
+}
+#comparador main .container .fs-c #formularioA label,
+#comparador main .container .fs-c #formularioB label {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 28px;
+}
+#comparador main .container .fs-c #formularioA .label-c,
+#comparador main .container .fs-c #formularioB .label-c {
+  display: block;
+  font-size: 25px;
+  text-shadow: 0 0 5px #dddddd;
+  margin-bottom: 5px;
+  color: #000000;
+}
+#comparador main .container .fs-c #formularioA #opcionA,
+#comparador main .container .fs-c #formularioA #opcionB,
+#comparador main .container .fs-c #formularioB #opcionA,
+#comparador main .container .fs-c #formularioB #opcionB {
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+#comparador main #resultados {
+  background-color: rgba(226, 226, 226, 0.5568627451);
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 50px;
+  padding: 50px;
+  color: rgba(0, 0, 0, 0.3);
+  border: 3px solid #000000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 1px 10px #6502a7;
+}
+#comparador main #resultados #resultado-c {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 28px;
+  opacity: 50%;
+}
+
+/* ------------------------------------------------------------------------------- BODY *DESTACADOS* ------------------------------------------------------------------------------- */
+#destacadoss {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-image: url(../images/d_backgroundimage.jpg);
+  background-color: #f0f0f0;
+  -webkit-backdrop-filter: brightness(40%);
+          backdrop-filter: brightness(40%);
+}
+#destacadoss #titulo-d {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 66px;
+  text-align: center;
+  color: #f0f0f0;
+  text-shadow: 0 1px 10px #000000, 0 2px 10px #000000;
+}
+#destacadoss .contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 77px;
+  margin: 20px auto;
+}
+#destacadoss .contenido .item {
+  text-align: center;
+  width: 200px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 2px solid #000000;
+  box-shadow: 0 1px 8px #6502a7;
+  border-radius: 10px;
+}
+#destacadoss .contenido .item .precios {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+#destacadoss .contenido .item .image-container {
+  position: relative;
+  display: inline-block;
+}
+#destacadoss .contenido .item .image-container img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#destacadoss .contenido .item .image-container .comprar-btn {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: #9900ff;
+  font-family: "Josefin Sans", sans-serif;
+  transition: all 5ms;
+  box-shadow: 0 5px 10px #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#destacadoss .contenido .item .image-container .image-container:hover .comprar-btn {
+  display: block;
+}
+#destacadoss .contenido .item ul {
+  list-style-type: none;
+  padding: 0;
+}
+#destacadoss .contenido .item ul li {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 85%;
+  margin-bottom: 5px;
+}
+
+/* ------------------------------------------------------------------------------- BODY *SOBRE NOSOTROS* ------------------------------------------------------------------------------- */
+#sobre_nosotros {
+  background-image: url(../images/sn_backgrundimage.png);
+  -webkit-backdrop-filter: brightness(40%);
+          backdrop-filter: brightness(40%);
+  background-position: 0%;
+}
+#sobre_nosotros #main-sn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgba(240, 240, 240, 0.8156862745);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 25px;
+  color: rgba(221, 221, 221, 0.7607843137);
+}
+#sobre_nosotros #main-sn #titulo-sn {
+  color: #050505;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4em;
+  text-align: center;
+}
+#sobre_nosotros #main-sn .sn {
+  color: #252525;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* ------------------------------------------------------------------------------- FOOTER ------------------------------------------------------------------------------- */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #e2e2e2;
+  align-items: center;
+  border-top: 3px solid black;
+  position: relative;
+  bottom: 0;
+  align-items: center;
+}
+footer .footer-column {
+  min-width: 20%;
+}
+footer .footer-column h6 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+footer .footer-column ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "Josefin Sans", sans-serif;
+}
+footer .footer-column ul li img {
+  width: 25px;
+  height: auto;
+}
+footer .footer-column input,
+footer .footer-column textarea,
+footer .footer-column button {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+footer .footer-column button {
+  background-color: #9900ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+footer .footer-column button:hover {
+  transition: all 5ms;
+  box-shadow: 0 5px 10px #000000;
+}
+
+/* ------------------------------------------------------------------------------- **BOTONES** ------------------------------------------------------------------------------- */
+.boton {
+  background-color: #9900ff;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 5px;
+  color: white;
+  border: 1px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 15px;
+  width: 50%;
+  font-family: "Josefin Sans", sans-serif;
+}
+.boton:hover {
+  transition: all 5ms;
+  box-shadow: 0 5px 10px #000000;
+}
+.boton:hover .boton a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------------------------- **MEDIA QUERY** -------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- MEDIA QUERY *INCIO* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 1023px) and (min-width: 251px) {
+  #index .background-section {
+    width: 95%;
+    margin: 50px auto;
+    gap: 30px;
+  }
+  #index .background-section .contenedor .titulo-inicio {
+    font-size: 28px;
+  }
+  #index .background-section .contenedor .i {
+    font-size: 16px;
+  }
+}
+/* ------------------------------------------------------------------------------- MEDIA QUERY *ATPC* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 1023px) and (min-width: 251px) {
+  #atpc {
+    background-size: cover;
+  }
+  #atpc #form-atpc {
+    margin: 50px auto;
+    width: 80%;
+    background-color: rgba(221, 221, 221, 0.6);
+    padding: 20px;
+    box-shadow: 0 0 15px #6502a7;
+    align-items: center;
+    text-align: center;
+  }
+  #atpc #form-atpc #titulo-atpc {
+    font-size: 40px;
+  }
+  #atpc #form-atpc .titulo-seccion {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  #atpc #form-atpc input[type=text],
+  #atpc #form-atpc input[type=email],
+  #atpc #form-atpc input[type=number],
+  #atpc #form-atpc #procesador,
+  #atpc #form-atpc textarea {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+/* ------------------------------------------------------------------------------- MEDIA QUERY *COMPARADOR* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 1023px) and (min-width: 251px) {
+  #comparador {
+    background-size: cover;
+  }
+  #comparador main {
+    margin: 20px;
+  }
+  #comparador main #titulo-comparador {
+    font-size: 60px;
+  }
+  #comparador main .container {
+    gap: 50px;
+  }
+  #comparador main .container .fs-c {
+    width: 100%;
+    flex-direction: column;
+  }
+  #comparador main .container .fs-c .componente-c {
+    font-size: 40px;
+    margin: 10px auto;
+  }
+  #comparador main .container .fs-c #formularioA,
+  #comparador main .container .fs-c #formularioB {
+    margin: 20px auto;
+    width: 80%;
+  }
+  #comparador main .container .fs-c #formularioA label,
+  #comparador main .container .fs-c #formularioB label {
+    font-size: 20px;
+  }
+  #comparador main .container .fs-c #formularioA #opcionA,
+  #comparador main .container .fs-c #formularioA #opcionB,
+  #comparador main .container .fs-c #formularioB #opcionA,
+  #comparador main .container .fs-c #formularioB #opcionB {
+    font-size: 18px;
+    padding: 8px;
+  }
+  #comparador #resultados {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  #comparador #resultados #resultado-c {
+    font-size: 24px;
+  }
+}
+/* ------------------------------------------------------------------------------- MEDIA QUERY *DESTACADOS* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) and (min-width: 250px) {
+  #destacadoss #titulo-d {
+    font-size: 40px;
+  }
+  #destacadoss .contenido .item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #destacadoss .contenido .image-container img {
+    width: 100%;
+  }
+}
+/* ------------------------------------------------------------------------------- MEDIA QUERY *SOBRE NOSOTROS* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 1023px) {
+  #main-sn {
+    padding: 15px;
+    max-width: 90%;
+  }
+  #titulo-sn {
+    font-size: 3em;
+  }
+  .sn {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 250px) {
+  #main-sn {
+    padding: 10px;
+    max-width: 100%;
+  }
+  #titulo-sn {
+    font-size: 2.5em;
+  }
+  .sn {
+    font-size: 0.8em;
+  }
+}/*# sourceMappingURL=styles.css.map */

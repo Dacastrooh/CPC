@@ -1,0 +1,137 @@
+/* ------------------------------------------------------------------------------- MEDIA QUERY *INCIO* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 1023px) and (min-width: 251px) {
+    #index {
+        .background-section {
+            width: 95%;
+            margin: 50px auto;
+            gap: 30px;
+            .contenedor {
+                .titulo-inicio {
+                    font-size: 28px;
+                }
+                .i {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+/* ------------------------------------------------------------------------------- MEDIA QUERY *ATPC* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 1023px) and (min-width: 251px) {
+    #atpc {
+        background-size: cover;
+        #form-atpc {
+            margin: 50px auto;
+            width: 80%;
+            background-color: rgba(221, 221, 221, 0.6);
+            padding: 20px;
+            box-shadow: 0 0 15px #6502a7;
+            align-items: center;
+            text-align: center;
+            #titulo-atpc {
+                font-size: 40px;
+            }
+            .titulo-seccion {
+                font-size: 20px;
+                margin-top: 15px;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="number"],
+            #procesador,
+            textarea {
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+/* ------------------------------------------------------------------------------- MEDIA QUERY *COMPARADOR* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 1023px) and (min-width: 251px) {
+    #comparador {
+        background-size: cover;
+        main {
+            margin: 20px;
+            #titulo-comparador {
+                font-size: 60px;
+            }
+            .container {
+                gap: 50px;
+                .fs-c {
+                    width: 100%;
+                    flex-direction: column;
+                    .componente-c {
+                        font-size: 40px;
+                        margin: 10px auto;
+                    }
+                    #formularioA,
+                    #formularioB {
+                        margin: 20px auto;
+                        width: 80%;
+                        label {
+                            font-size: 20px;
+                        }
+                        #opcionA,
+                        #opcionB {
+                            font-size: 18px;
+                            padding: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        #resultados {
+            margin-top: 20px;
+            padding: 20px;
+            #resultado-c {
+                font-size: 24px;
+            }
+        }
+    }
+}
+/* ------------------------------------------------------------------------------- MEDIA QUERY *DESTACADOS* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) and (min-width: 250px) {
+    #destacadoss {
+        #titulo-d {
+            font-size: 40px;
+        }
+        .contenido {
+            .item {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .image-container {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+/* ------------------------------------------------------------------------------- MEDIA QUERY *SOBRE NOSOTROS* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 1023px) {
+
+    #main-sn {
+        padding: 15px;
+        max-width: 90%;
+    }
+    #titulo-sn {
+        font-size: 3em;
+    }
+    .sn {
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 250px) {
+
+    #main-sn {
+        padding: 10px;
+        max-width: 100%;
+    }
+    #titulo-sn {
+        font-size: 2.5em;
+    }
+    .sn {
+        font-size: 0.8em;
+    }
+}
