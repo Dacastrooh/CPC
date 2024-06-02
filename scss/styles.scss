@@ -43,23 +43,24 @@ header {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-                .titulo-inicio {
-                    font-size: 33px;
-                    font-family: $titulos;
-                    text-align: center;
-                    }
-                    .i {
-                        font-size: 18px;
-                        text-align: center;
-                        font-family: $textos;
-                    }
-                &:hover {
-                    transition: all 5ms;
-                    box-shadow: 0 1px 10px #6502a7;
-                }
+            .titulo-inicio {
+                font-size: 33px;
+                font-family: $titulos;
+                text-align: center;
+            }
+            .i {
+                font-size: 18px;
+                text-align: center;
+                font-family: $textos;
+            }
+            &:hover {
+                transition: all 5ms;
+                box-shadow: 0 1px 10px #6502a7;
             }
         }
     }
+}
+
 /* ------------------------------------------------------------------------------- BODY *ATPC* ------------------------------------------------------------------------------- */
 @import "_atpc";
 /* ------------------------------------------------------------------------------- BODY *COMPARADOR* ------------------------------------------------------------------------------- */
